@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&family=Modak&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+    <title>Calculadora</title>
+</head>
+<body>
+    
+    <audio src=""></audio>
+    
+    <div id="menuPrincipal">
+        <div id="calculadora">
+            <table>
+
+                <input class="textview">
+
+                <tr>
+                    <td><input type="button" class="button" value="C" onclick="apagar()"></td>
+                    <td><input type="button" class="button" value="<" onclick="apagando()"></td>
+                    <td><input type="button" class="button" value="÷" onclick="valor('/')"></td>
+                    <td><input type="button" class="button" value="×" onclick="valor('*')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="button" value="7" onclick="valor(7)"></td>
+                    <td><input type="button" class="button" value="8" onclick="valor(8)"></td>
+                    <td><input type="button" class="button" value="9" onclick="valor(9)"></td>
+                    <td><input type="button" class="button" value="-" onclick="valor('-')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="button" value="4" onclick="valor(4)"></td>
+                    <td><input type="button" class="button" value="5" onclick="valor(5)"></td>
+                    <td><input type="button" class="button" value="6" onclick="valor(6)"></td>
+                    <td><input type="button" class="button" value="+" onclick="valor('+')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="button" value="1" onclick="valor(1)"></td>
+                    <td><input type="button" class="button" value="2" onclick="valor(2)"></td>
+                    <td><input type="button" class="button" value="3" onclick="valor(3)"></td>
+                    <td rowspan="5"><input type="button" class="button" value="=" style="height: 127px; background: rgb(48, 48, 255); border-radius: 46px;" onclick="resultado()"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" class="button" value="0" style="width: 127px; border-radius: 46px;" onclick="valor(0)"></td>
+                    <td><input type="button" class="button" value="," onclick="valor('.')"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="historico">
+            <h2>Histórico</h2>
+            <ul>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
