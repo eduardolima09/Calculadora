@@ -35,9 +35,7 @@ function resultado() {
     audio.play()
 
     // verificando resultado
-    if(text.length == 0) {
-        ''
-    } else {
+    if(text.length != 0) {
         document.querySelector('.textview').value = eval(text)
 
         //historico
@@ -65,8 +63,8 @@ function resultado() {
             for(var i = 0; i <= 7; i++) {
                 quantLi[i].style.background = 'rgb(82, 82, 90)'
             }
-            
-        } 
+    } 
+
     }
 }
 
